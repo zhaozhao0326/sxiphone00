@@ -5677,7 +5677,8 @@ if (mergedData.userTaboos) localStorage.setItem('sx_user_taboos', mergedData.use
     window.unlockPhone = function() {
         const githubToken = localStorage.getItem(GITHUB_TOKEN_KEY);
         const oldKey = localStorage.getItem('sxiphone_device_key');
-        const guestMode = localStorage.getItem(GUEST_KEY);
+        // 自部署补丁：默认以遊客模式進入，不再強制彈 GitHub token 框；仍可在「設定」中連接 GitHub 雲備份。
+        const guestMode = localStorage.getItem(GUEST_KEY) || '1';
         const ls = document.getElementById('lock-screen');
         if (!githubToken && !oldKey && !guestMode) {
             if (ls) ls.style.transform = 'translateY(0)';
