@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sxiphone-v25';
+const CACHE_NAME = 'sxiphone-v26';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -23,7 +23,11 @@ const STATIC_ASSETS = [
   './apps/screenshots/icon-48x48.png',
   './apps/screenshots/icon-120x120.png',
   './apps/screenshots/icon-152x152.png',
-  './apps/screenshots/current.png'
+  './apps/screenshots/current.png',
+  './vendor/local-assets.css',
+  './vendor/fontawesome/css/all.min.css',
+  './vendor/fonts/material-symbols-rounded.woff2',
+  './vendor/fontawesome/webfonts/fa-solid-900.woff2'
 ];
 
 const CACHE_STRATEGIES = {

@@ -28,10 +28,10 @@
     --sx-battery-level: 100%;
     --sx-battery-low-warning: 20%;
     --sx-battery-low-color: #FF3B30;
-    --sx-font-primary: 'SF Pro Display', sans-serif;
-    --sx-font-lock-time: 'SF Pro Display', sans-serif;
-    --sx-font-chat: 'SF Pro Display', sans-serif;
-    --sx-font-app-title: 'SF Pro Display', sans-serif;
+    --sx-font-primary: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', 'Noto Sans CJK TC', sans-serif;
+    --sx-font-lock-time: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', 'Noto Sans CJK TC', sans-serif;
+    --sx-font-chat: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', 'Noto Sans CJK TC', sans-serif;
+    --sx-font-app-title: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', 'Noto Sans CJK TC', sans-serif;
     --sx-icon-size: 62px;
     --sx-icon-radius: 20px;
     --sx-icon-inner-size: 28px;

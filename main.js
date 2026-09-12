@@ -5826,6 +5826,11 @@ if (mergedData.userTaboos) localStorage.setItem('sx_user_taboos', mergedData.use
         const originalLaunchApp = window.launchApp;
         window.launchApp = function(appId) {
             appHistory.push(appId);
+            // 压入一条 history 记录，使 Android 实体返回键能触发 popstate 进而关闭 app
+            // （原实现只维护 JS 数组 appHistory，从未 pushState，导致返回键永远关不掉 app）
+            if (window.location.hash !== `#app-${appId}`) {
+                window.history.pushState({ app: appId }, '', `#app-${appId}`);
+            }
             originalLaunchApp(appId);
         };
 
